@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../../app.css';
-	import logo from '$lib/assets/EinLogo.png'
+	import logo from '$lib/assets/Logo.png'
 	import { authClient } from "$lib/auth-client.ts"
 	import { User, Power } from '@lucide/svelte'
 	import { goto } from '$app/navigation'

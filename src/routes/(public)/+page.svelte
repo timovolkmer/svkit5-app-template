@@ -1,6 +1,6 @@
 <script lang="ts">
 import { enhance } from '$app/forms'
-import logo from '$lib/assets/EinLogo.png'
+import logo from '$lib/assets/Logo.png'
 import type { PageProps } from './$types'
 
 let { data, form }: PageProps = $props()

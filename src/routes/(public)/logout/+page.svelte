@@ -1,5 +1,5 @@
 <script lang="ts">
-import logo from '$lib/assets/EinLogo.png';
+import logo from '$lib/assets/Logo.png';
 import { authClient } from "$lib/auth-client.ts"
 
 const session = authClient.useSession();
