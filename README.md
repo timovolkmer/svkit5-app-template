@@ -18,7 +18,7 @@ Please refer to the respective documnetations on how to develop Svelte/SvelteKit
 
 To start working with this template, perform the following steps
 
-### Check clone this repository & run npm install:
+### Clone this repository & run npm install:
 ```
 git clone https://github.com/timovolkmer/svkit5-app-template.git
 cd svkit5-app-template
