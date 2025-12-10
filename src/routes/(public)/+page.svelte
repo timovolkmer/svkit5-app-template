@@ -1,9 +1,9 @@
 <script lang="ts">
 import { enhance } from '$app/forms'
 import logo from '$lib/assets/Logo.png'
-import type { PageProps } from './$types'
+import type { PageProps } from './$types.ts'
 
-let { data, form }: PageProps = $props()
+let { form }: PageProps = $props()
 
 </script>
 
@@ -33,7 +33,7 @@ let { data, form }: PageProps = $props()
                 {:else}
                     <input type="password" name="pwd" id="pwd" required maxlength="32" class="width-82 ml-6 mt-5 border-sky-50 border bg-sky-200 rounded-md text-sky-900" /><br />
                 {/if}
-                <button type="submit" id="submit" name="submit" class="mt-5 ml-64 h-10 w-24 border border-sky-50 hover:bg-sky-200 hover:text-sky-900 rounded-md">
+                <button type="submit" id="submit" name="submit" class="mt-5 ml-64 h-10 w-24 border bg-sky-900 text-sky-200 hover:text-white active:text-sky-500 rounded-md">
                 Login
                 </button>
                 <p class="text-sm mt-5">Or <a href="/register" class="text-amber-500 font-bold hover:underline active:underline">create an account</a> if you don't have one yet.</p>

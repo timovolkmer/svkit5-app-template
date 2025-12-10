@@ -2,34 +2,34 @@
 	import '../../app.css';
 	import logo from '$lib/assets/Logo.png'
 	import { authClient } from "$lib/auth-client.ts"
-	import { User, Power } from '@lucide/svelte'
+	import { Power } from '@lucide/svelte'
 	import { goto } from '$app/navigation'
 
-	const session = authClient.useSession();
+	const session = authClient.useSession()
 
-	let { children } = $props();
+	let { children } = $props()
 </script>
 
 <div id="topnavigation" class="absolute w-full h-16 top-0 left-0 pl-2 pr-2 pt-2 pb-2 m-0 bg-sky-900 text-sky-200 font-bold shadow-xl">
 	<header>
-	<a href="/browse/"><img src={logo} alt="Logo" height="32" class="relative inline-block m-0 p-0"/></a>
+	<a href="/start/"><img src={logo} alt="Logo" height="32" class="relative inline-block m-0 p-0"/></a>
 	<nav class="inline-block align-middle">
 		<ul class="relative flex list-none">
-			<li class="relative mr-4 cursor-pointer hover:text-sky-500 active:text-sky-500 selection:text-sky-500">
-				<a href="/browse/">Browse</a>
+			<li class="ml-10 cursor-pointer text-sky-200 hover:text-white active:text-sky-500">
+				<a href="/start/">Start</a>
 			</li>
-			<li class="relative mr-4 cursor-pointer hover:text-sky-500 active:text-sky-500 selection:text-sky-500">
-				<a href="/statistics/">Statistics</a>
+			<li class="ml-10 cursor-pointer text-sky-200 hover:text-white active:text-sky-500">
+				<a href="/users/">Users</a>
 			</li>
-			<li class="relative mr-4 cursor-pointer hover:text-sky-500 active:text-sky-500 selection:text-sky-500">
-				<a href="/upload/">Upload</a>
+			<li class="ml-10 cursor-pointer text-sky-200 hover:text-white active:text-sky-500">
+				<a href="/about/">About</a>
 			</li>
 		</ul>
 		<div class="absolute inline-block top-4 right-5 w-max-96 font-light align-middle place-content-end">
 			<div class="relative flex align-middle whitespace-nowrap text-nowrap"> 
 			Welcome&nbsp;{$session.data?.user.name}
 			<button
-			class="ml-10 hover:text-sky-500 cursor-pointer"
+			class="ml-10 text-sky-200 hover:text-white active:text-sky-500"
 			onclick={async () =>
 				await authClient.signOut({
 					fetchOptions: {
@@ -37,7 +37,7 @@
 							goto('/logout/');
 						}
 					}
-				})}><Power size="24" /></button>
+				})}><Power size="24" strokeWidth="3" /></button>
 			</div>
 		</div>
 	</nav>

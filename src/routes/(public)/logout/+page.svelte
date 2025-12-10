@@ -1,8 +1,11 @@
 <script lang="ts">
-import logo from '$lib/assets/Logo.png';
+import logo from '$lib/assets/Logo.png'
 import { authClient } from "$lib/auth-client.ts"
+import type { PageProps } from './$types.ts'
 
-const session = authClient.useSession();
+let { data }: PageProps = $props()
+
+const session = authClient.useSession()
 
 </script>
 

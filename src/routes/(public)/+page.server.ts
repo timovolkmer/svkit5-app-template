@@ -1,4 +1,4 @@
-import { redirect,fail } from '@sveltejs/kit'
+import { redirect, fail } from '@sveltejs/kit'
 import { auth } from "$lib/auth.ts"
 import type { Actions } from './$types.js'
 
@@ -16,9 +16,9 @@ export const actions = {
 				password: password, // required
     		},
 			asResponse: true
-		});
+		})
 		if (response.ok) {
-			redirect( 303, "/browse/")
+			redirect( 303, "/start/")
 		}
 		else {
 			return fail(400, { email, error: true, message: response.statusText })

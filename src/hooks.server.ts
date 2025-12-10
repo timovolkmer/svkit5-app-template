@@ -1,6 +1,6 @@
 import { auth } from "$lib/auth.ts"; // path to your auth file
-import { redirect, type Handle } from "@sveltejs/kit";
-import { svelteKitHandler } from "better-auth/svelte-kit";
+import { redirect, type Handle } from "@sveltejs/kit"
+import { svelteKitHandler } from "better-auth/svelte-kit"
 import { building } from '$app/environment'
 
 export const handle: Handle = async ({ event, resolve }) => {

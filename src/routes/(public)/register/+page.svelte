@@ -1,9 +1,9 @@
 <script lang="ts">
 import { enhance } from '$app/forms'
 import logo from '$lib/assets/Logo.png'
-import type { PageProps } from './$types'
+import type { PageProps } from './$types.ts'
 
-let { data, form }: PageProps = $props();
+let { data, form }: PageProps = $props()
 </script>
 
 <div id="branding" class="absolute top-24 left-14 place-content-start">
