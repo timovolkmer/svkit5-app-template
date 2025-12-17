@@ -44,7 +44,7 @@ BETTER_AUTH_URL=http://localhost:5173 # Base URL of your app
 ```
 
 ### Run prepare & prisma generate:
-First you must generate required config files (e.g. .svelte-kit/tsconfig.json)by running npm prepare before you can run prisma generate to generate the prisma client. Afterwards you can migrate your database schema:
+First you must generate required config files (e.g. .svelte-kit/tsconfig.json - see: https://github.com/prisma/prisma/issues/28709) by running npm prepare before you can run prisma generate to generate the prisma client. Afterwards you can migrate your database schema:
 ```
 npm prepare
 npx prisma generate
