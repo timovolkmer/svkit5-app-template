@@ -18,11 +18,10 @@ Please refer to the respective documnetations on how to develop Svelte/SvelteKit
 
 To start working with this template, perform the following steps
 
-### Clone this repository & run npm install:
+### Clone this repository:
 ```
 git clone https://github.com/timovolkmer/svkit5-app-template.git
 cd svkit5-app-template
-npm install
 ```
 
 ### Set up your PostegreSQL database:
@@ -44,11 +43,18 @@ BETTER_AUTH_SECRET=8rZJJZzNfC3mxSpP2nAuI0RdSokncg3G
 BETTER_AUTH_URL=http://localhost:5173 # Base URL of your app
 ```
 
-### Run prisma migrate:
-Now you you should run prisma init (again) and prisma migrate. This makes sure that the prisma client is generated properly and it migrates the database schema to the database:
+### Run prepare & prisma generate:
+First you must generate required config files (e.g. .svelte-kit/tsconfig.json)by running npm prepare before you can run prisma generate to generate the prisma client. Afterwards you can migrate your database schema:
 ```
-npx prisma init
+npm prepare
+npx prisma generate
 npx prisma migrate dev
+```
+
+### Run npm install
+Now you must run npm install:
+```
+npm install
 ```
 
 ### Check everything is running
