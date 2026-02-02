@@ -39,7 +39,7 @@ Your .env file should look like this:
 DATABASE_URL="postgresql://[dbuser]:[dbpassword]@localhost:5432/[dbname]?schema=public"
 
 # Better-Auth 
-BETTER_AUTH_SECRET=8rZJJZzNfC3mxSpP2nAuI0RdSokncg3G
+BETTER_AUTH_SECRET=[Put your generated secret here]
 BETTER_AUTH_URL=http://localhost:5173 # Base URL of your app
 ```
 
