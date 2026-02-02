@@ -1,5 +1,5 @@
 {
-	"name": "svkit5-app-template",
+	"name": "medialog",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",

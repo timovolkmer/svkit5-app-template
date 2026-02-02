@@ -20,8 +20,8 @@ To start working with this template, perform the following steps
 
 ### Clone this repository:
 ```
-git clone https://github.com/timovolkmer/svkit5-app-template.git
-cd svkit5-app-template
+git clone https://github.com/timovolkmer/medialog.git
+cd medialog
 ```
 
 ### Set up your PostegreSQL database:
