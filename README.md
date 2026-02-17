@@ -1,6 +1,6 @@
 # SvelteKit 5 Application Template with Better-Auth v1.4 and Prisma v7.1
 
-This is an application template for SvelteKit 5 using better-auth (v1.4) for authentication, prisma v7.1 ORM for database access (configured for postgreSQL), styling with tailwindcss, and lucide icons. It demonstrates simple E-Mail authentication (using Better-auth backend client access) and simple routing in SvelteKit, including a database access to fetch user data. Feel free to clone this repo and use it for your own developments, respecting all applicable licenses.
+This is an application template for SvelteKit 5 using better-auth (v1.4) for authentication, prisma v7.4 ORM for database access (configured for postgreSQL), styling with tailwindcss, and lucide icons. It demonstrates simple E-Mail authentication (using Better-auth backend client access) and simple routing in SvelteKit, including a database access to fetch user data. Feel free to clone this repo and use it for your own developments, respecting all applicable licenses.
 
 I try to keep up with changes in the interoperability between the libraries used but can't promise anything ;-) 
 I may add more useful libraries in the future. Feel free to contact me in case you have any comments, ideas for improvements or wishes for future developments.
