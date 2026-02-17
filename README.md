@@ -34,7 +34,7 @@ openssl rand -base64 32
 ```
 You can also use the Better-Auth online generator to the same, see:  https://www.better-auth.com/docs/installation.
 
-Your .env file should look like this:
+rename the supplied example env-file "dot.env.sample" to ".env" or create your own. Your .env file should at leas have the following content:
 ```
 DATABASE_URL="postgresql://[dbuser]:[dbpassword]@localhost:5432/[dbname]?schema=public"
 
